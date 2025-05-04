@@ -3,49 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Tienda AliExpress</title>
+    <title>Mi Tienda de AliExpress</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            box-sizing: border-box;
         }
         header {
             background-color: #333;
             color: white;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
         }
         .product {
-            display: inline-block;
-            width: 30%;
-            margin: 10px;
-            padding: 10px;
             background-color: white;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
         }
         .product img {
             width: 100%;
             height: auto;
+            border-radius: 8px;
         }
-        .product a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            display: block;
+        .product p {
+            font-size: 14px;
+            color: #555;
             margin-top: 10px;
             text-align: center;
         }
+        .product a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #FF6F00; /* Naranja cálido */
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .product a:hover {
+            background-color: #E65C00; /* Naranja más oscuro */
+        }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             background-color: #333;
             color: white;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -56,24 +79,70 @@
     </header>
 
     <div class="container">
-        <section>
-            <h2>Productos recomendados</h2>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Producto 1">
-                <p>Smartphone de alta calidad</p>
-                <a href="https://www.aliexpress.com/item/XXXXXXXX" target="_blank">Comprar ahora</a>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Producto 2">
-                <p>Reloj inteligente con múltiples funciones</p>
-                <a href="https://www.aliexpress.com/item/XXXXXXXX" target="_blank">Comprar ahora</a>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/300x200" alt="Producto 3">
-                <p>Audífonos Bluetooth inalámbricos</p>
-                <a href="https://www.aliexpress.com/item/XXXXXXXX" target="_blank">Comprar ahora</a>
-            </div>
-        </section>
+        <!-- Producto 1 -->
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sbc689f34c84741c1bc4e5bf936c29956P.jpg" alt="Producto 1">
+            <p>MIYOO Mini Plus Portable Retro Handheld Game Console 3.5-inch IPS HD Screen Children's Gift Linux System Classic Gaming Emulator</p>
+            <a href="https://s.click.aliexpress.com/e/_ooHCiZP" target="_blank">Comprar ahora</a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sd20d9f5f5eb3483fb4d5c42c4bf69e83F.jpg" alt="Producto 2">
+            <p>Kawaii Keychain Pendant Cartoon Mofusand Shark Cat Cross-Dressing Doll Backpack Decor Toys</p>
+            <a href="https://s.click.aliexpress.com/e/_oEGinE9" target="_blank">Comprar ahora</a>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S6ac63622fce64b549cb5a681b95abc08G.jpg" alt="Producto 3">
+            <p>Magcubic Projector HY300 Pro 4K Android 11 Dual Wifi6 260ANSI Allwinner H713 BT5.0 1080P 1280*720P Home Cinema Outdoor Projector</p>
+            <a href="https://s.click.aliexpress.com/e/_oEYdjhT" target="_blank">Comprar ahora</a>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S888a77c091b34f479a4f763addbe660dr.jpg" alt="Producto 4">
+            <p>Sunglasses For Men Square Sunglasses Women Trendy Luxe Vintage Fashion Glasses Retro Steampunk Shades Gafas De Sol Hombre</p>
+            <a href="https://s.click.aliexpress.com/e/_okP73nf" target="_blank">Comprar ahora</a>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0d2c5c42242c460ea33c8dc99d180befQ.jpg" alt="Producto 5">
+            <p>Max 256G Retro Handheld Game Console Linux System 3.5Inch IPS Screen Portable Pocket Video Player 2Joystick 64G 128G Games R36S</p>
+            <a href="https://s.click.aliexpress.com/e/_op1IzpT" target="_blank">Comprar ahora</a>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S8a3bcade355d47f8bc693302a6424f3fG.jpg" alt="Producto 6">
+            <p>Screwdriver Set  Magnetic Torx Phillips Screw Bit Kit WOZOBUY With Electrical Driver Remover Wrench Repair Phone PC Tools</p>
+            <a href="https://s.click.aliexpress.com/e/_oklKtvb" target="_blank">Comprar ahora</a>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sf9bf916971104fe8ac4d5102d1cc46b89.jpg" alt="Producto 7">
+            <p>ANBERNIC RG40XX H Handheld Game Console 4.0-in 640*480 IPS Screen 3200mAh 64 Bit System With RGB Light Built in 5K+Games RG40XXH</p>
+            <a href="https://s.click.aliexpress.com/e/_onUI8hJ" target="_blank">Comprar ahora</a>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S1b1fda3c4fc64e59bc81dafea6b7d52fQ.jpg" alt="Producto 8">
+            <p>150cm LED Daytime Running Light Scan Starting Car Hood Decorative Lights DRL Auto Engine Hood Guide Decorative Ambient Lamp 12V</p>
+            <a href="https://s.click.aliexpress.com/e/_onXg3aN" target="_blank">Comprar ahora</a>
+        </div>
+
+        <!-- Producto 9 -->
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S38903a9e49484defa52d952d76394200A.jpg" alt="Producto 9">
+            <p>MACHINIST B450 Motherboard AMD Processor Dual-channel DDR4 Memory AM4 Mainboard M.2 NVME (Supports Ryzen 5500 5600 5600G CPU)</p>
+            <a href="https://s.click.aliexpress.com/e/_onKEvAz" target="_blank">Comprar ahora</a>
+        </div>
+
+        <!-- Agregar más productos según sea necesario -->
     </div>
 
     <footer>
